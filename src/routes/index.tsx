@@ -185,7 +185,7 @@ function Index() {
           />
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service, i) => {
-              const Icon = serviceIcons[i % serviceIcons.length];
+              const Icon = serviceIcons[i % serviceIcons.length]!;
               return (
                 <ContentCard key={service} className="flex items-start gap-4">
                   <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent text-accent-foreground">
