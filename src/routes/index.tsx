@@ -151,7 +151,7 @@ function Index() {
           />
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {focusAreas.map((area, i) => {
-              const Icon = focusIcons[i % focusIcons.length];
+              const Icon = focusIcons[i % focusIcons.length]!;
               return (
                 <ContentCard key={area} className="flex items-start gap-4">
                   <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-secondary text-primary">

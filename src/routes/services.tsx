@@ -30,7 +30,7 @@ function ServicesPage() {
       <section className="section-pad">
         <div className="container-site grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, i) => {
-            const Icon = icons[i % icons.length];
+            const Icon = icons[i % icons.length]!;
             return (
               <ContentCard key={service} className="flex flex-col">
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent text-accent-foreground">
