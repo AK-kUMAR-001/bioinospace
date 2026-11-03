@@ -49,7 +49,7 @@ function FocusAreasPage() {
             );
           })}
         </div>
-        <div className="container-site mt-12 text-center">
+        <div className="container-site mt-8 text-center">
           <Link
             to="/services"
             className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"

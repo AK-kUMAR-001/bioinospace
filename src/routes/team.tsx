@@ -21,7 +21,7 @@ function TeamPage() {
       <section className="section-pad">
         <div className="container-site">
           <h2 className="text-2xl font-semibold text-foreground md:text-3xl">Core team</h2>
-          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {team.map((member) => (
               <ContentCard key={member.name} className="flex items-start gap-4">
                 <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-primary to-primary-glow font-display text-base font-bold text-primary-foreground">
@@ -49,7 +49,7 @@ function TeamPage() {
               Research interns
             </h2>
           </div>
-          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {researchInterns.map((intern) => (
               <ContentCard
                 key={intern}

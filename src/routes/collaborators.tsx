@@ -28,7 +28,7 @@ function CollaboratorsPage() {
               MoU &amp; Collaborators
             </h2>
           </div>
-          <div className="card-soft mt-8 flex items-start gap-4 p-6">
+          <div className="card-soft mt-6 flex items-start gap-4 p-6">
             <span className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent text-accent-foreground">
               <GraduationCap className="h-5 w-5" aria-hidden />
             </span>
@@ -49,7 +49,7 @@ function CollaboratorsPage() {
             Distinguished experts from academia, research institutes and industry who guide our
             scientific direction.
           </p>
-          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {advisors.map((advisor) => (
               <ContentCard key={advisor.name} className="flex items-start gap-4">
                 <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-primary to-primary-glow font-display text-sm font-bold text-primary-foreground">

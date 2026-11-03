@@ -40,7 +40,7 @@ function Index() {
           aria-hidden
           className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/45 to-background/15"
         />
-        <div className="container-site relative py-24 md:py-32">
+        <div className="container-site relative py-16 md:py-24">
           <div className="max-w-2xl rounded-3xl bg-background/70 p-6 backdrop-blur-sm md:p-8">
             <span className="eyebrow">RGU × AIC RAISE Initiative</span>
             <h1 className="mt-5 text-4xl font-bold text-balance-tight text-foreground sm:text-5xl md:text-6xl">
@@ -75,7 +75,7 @@ function Index() {
 
       {/* Stats */}
       <section className="border-y border-border bg-card">
-        <div className="container-site grid grid-cols-2 gap-6 py-10 md:grid-cols-4">
+        <div className="container-site grid grid-cols-2 gap-6 py-8 md:grid-cols-4">
           {stats.map((stat) => (
             <div key={stat.label} className="text-center">
               <p className="font-display text-3xl font-bold text-primary md:text-4xl">
@@ -137,7 +137,7 @@ function Index() {
             title="Our focus areas"
             description="Seven domains where lab science meets market-ready innovation."
           />
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {focusAreas.map((area, i) => {
               const Icon = focusIcons[i % focusIcons.length]!;
               return (
@@ -171,7 +171,7 @@ function Index() {
             title="Our services"
             description="From the first experiment to the first customer — support at every step."
           />
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service, i) => {
               const Icon = serviceIcons[i % serviceIcons.length]!;
               return (
@@ -205,7 +205,7 @@ function Index() {
             title="Innovations taking flight"
             description="A growing community of ventures incubated at Bio Innospace."
           />
-          <div className="mt-12 flex flex-wrap justify-center gap-3">
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
             {startups.slice(0, 14).map((startup) => (
               <span
                 key={startup.name}
@@ -215,7 +215,7 @@ function Index() {
               </span>
             ))}
           </div>
-          <div className="mt-10 text-center">
+          <div className="mt-8 text-center">
             <Link
               to="/startups"
               className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
@@ -228,9 +228,9 @@ function Index() {
       </section>
 
       {/* CTA */}
-      <section className="pb-16 md:pb-24">
+      <section className="pb-10 md:pb-16">
         <div className="container-site">
-          <div className="relative overflow-hidden rounded-3xl border border-primary/20 bg-gradient-to-br from-primary to-primary-glow px-6 py-14 text-center shadow-[var(--shadow-lift)] md:px-16">
+          <div className="relative overflow-hidden rounded-3xl border border-primary/20 bg-gradient-to-br from-primary to-primary-glow px-6 py-10 text-center shadow-[var(--shadow-lift)] md:px-16 md:py-12">
             <div
               aria-hidden
               className="pointer-events-none absolute -left-16 -top-16 h-48 w-48 rounded-full bg-white/10 blur-2xl"
@@ -248,7 +248,7 @@ function Index() {
             </p>
             <Link
               to="/team"
-              className="relative mt-8 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-foreground transition-transform hover:scale-[1.03]"
+              className="relative mt-6 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-foreground transition-transform hover:scale-[1.03]"
             >
               Meet the team
               <ArrowRight className="h-4 w-4" aria-hidden />

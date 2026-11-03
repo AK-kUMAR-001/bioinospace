@@ -19,13 +19,13 @@ export function PageHero({
         aria-hidden
         className="pointer-events-none absolute -left-24 bottom-0 h-56 w-56 rounded-full bg-accent blur-3xl opacity-50"
       />
-      <div className="container-site relative py-16 md:py-20">
+      <div className="container-site relative py-10 md:py-14">
         <span className="eyebrow">{eyebrow}</span>
-        <h1 className="mt-5 max-w-3xl text-4xl font-bold text-balance-tight text-foreground md:text-5xl">
+        <h1 className="mt-4 max-w-3xl text-4xl font-bold text-balance-tight text-foreground md:text-5xl">
           {title}
         </h1>
         {description && (
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
+          <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
             {description}
           </p>
         )}
