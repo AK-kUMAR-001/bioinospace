@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Target, Telescope } from "lucide-react";
-import nanoAbstract from "@/assets/nano-abstract.jpg";
 import { ContentCard, PageHero } from "@/components/shared";
 import { org, stats } from "@/data/site";
 
@@ -14,25 +13,11 @@ function AboutPage() {
       />
 
       <section className="section-pad">
-        <div className="container-site grid items-center gap-10 lg:grid-cols-5 lg:gap-16">
-          <div className="lg:col-span-3">
-            <h2 className="text-2xl font-semibold text-foreground md:text-3xl">Who we are</h2>
-            <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
-              {org.about}
-            </p>
-          </div>
-          <div className="lg:col-span-2">
-            <div className="card-soft overflow-hidden">
-              <img
-                src={nanoAbstract}
-                alt="Abstract render of DNA helixes and teal nanoparticles"
-                width={1024}
-                height={1024}
-                loading="lazy"
-                className="aspect-[4/3] w-full object-cover"
-              />
-            </div>
-          </div>
+        <div className="container-site max-w-4xl">
+          <h2 className="text-2xl font-semibold text-foreground md:text-3xl">Who we are</h2>
+          <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
+            {org.about}
+          </p>
         </div>
       </section>
 

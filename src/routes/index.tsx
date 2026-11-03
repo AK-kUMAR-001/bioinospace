@@ -18,7 +18,6 @@ import {
   Telescope,
 } from "lucide-react";
 import heroLab from "@/assets/hero-lab.jpg";
-import nanoAbstract from "@/assets/nano-abstract.jpg";
 import { ContentCard, SectionHeading } from "@/components/shared";
 import { focusAreas, org, services, startups, stats } from "@/data/site";
 
@@ -39,10 +38,10 @@ function Index() {
         />
         <div
           aria-hidden
-          className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/40"
+          className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/45 to-background/15"
         />
         <div className="container-site relative py-24 md:py-32">
-          <div className="max-w-2xl">
+          <div className="max-w-2xl rounded-3xl bg-background/70 p-6 backdrop-blur-sm md:p-8">
             <span className="eyebrow">RGU × AIC RAISE Initiative</span>
             <h1 className="mt-5 text-4xl font-bold text-balance-tight text-foreground sm:text-5xl md:text-6xl">
               Bio Innospace
@@ -50,7 +49,7 @@ function Index() {
             <p className="mt-4 font-display text-lg font-semibold text-primary md:text-xl">
               Biotechnology Innovation &amp; Incubation
             </p>
-            <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
+            <p className="mt-5 max-w-xl text-base font-medium leading-relaxed text-foreground/90 md:text-lg">
               Empowering researchers, students, innovators, and startups to transform scientific
               ideas into innovative products, technologies, and sustainable solutions.
             </p>
@@ -90,26 +89,15 @@ function Index() {
 
       {/* About */}
       <section className="section-pad">
-        <div className="container-site grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
-          <div className="order-2 lg:order-1">
-            <div className="card-soft relative overflow-hidden">
-              <img
-                src={nanoAbstract}
-                alt="Abstract render of DNA helixes and teal nanoparticles"
-                width={1024}
-                height={1024}
-                loading="lazy"
-                className="aspect-square w-full object-cover"
-              />
-            </div>
-          </div>
-          <div className="order-1 lg:order-2">
+        <div className="container-site">
+          <div className="mx-auto max-w-3xl text-center">
             <SectionHeading
-              align="left"
               eyebrow="About us"
               title="Bridging scientific research with real-world applications"
             />
-            <p className="mt-5 text-base leading-relaxed text-muted-foreground">{org.about}</p>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
+              {org.about}
+            </p>
           </div>
         </div>
       </section>
